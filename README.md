@@ -39,7 +39,7 @@ We welcome contributions to improve and expand the repository. Follow these step
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo-name.git
+   git clone https://github.com/mirkohahn/brew_data_structure.git
    ```
 2. **Create a Branch**:
    ```bash
@@ -60,3 +60,6 @@ This project is open-source and released under the [MIT License](LICENSE). This 
 
 ---
 Start building with these modern templates and help shape the future of brewing data standards!
+
+Thank you for using our modern data templates! 🚀
+🍺 Now go and have a beer!
