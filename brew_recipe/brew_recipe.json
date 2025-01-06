@@ -1,0 +1,699 @@
+{
+  "recipe_template_version": "0.4.1",
+  "date_created": "2025-01-06T00:00:00Z",
+  "date_modified": "2025-01-06T00:00:00Z",
+  "template_creator": {
+    "name": "mirko hahn",
+    "github": "@mirkohahn",
+    "website": "connected-brewery.com",
+    "contact": "contact@connected-brewery.com",
+    "other": "string"
+  },
+  "template_contributors": [{
+    "name": "string",
+    "github": "schedule",
+    "website": "connected-brewery.com",
+    "contact": "string",
+    "other": "string"
+  }],
+  "description": "A JSON template for beer recipes.",
+  "conversion": {
+    "from_legacy": "Supported",
+    "to_legacy": "Partial - Potential Data Loss"
+  },
+  "converted_from":{
+    "original_file_name": "string",
+    "original_file_format": "XML",
+    "converted_at": "2025-01-06T00:00:00Z",
+    "converted_via": "string"
+  },
+  "recipe_data": {
+    "id": "string",
+    "name": [{
+    "lang_id": "string",
+    "name": "string"
+    }],
+    "title_image": "string",
+    "version": "integer",
+    "type": "string",
+    "style": {
+      "name": "string",
+      "aroma": "string",
+      "flavor": "string",
+      "mouthfeel": "string",
+      "original_gravity": {
+        "minimum": { "value": "number", "unit": "SG" },
+        "maximum": { "value": "number", "unit": "SG" }
+      },
+      "final_gravity": {
+        "minimum": { "value": "number", "unit": "SG" },
+        "maximum": { "value": "number", "unit": "SG" }
+      },
+      "color": {
+        "minimum": { "value": "number", "unit": "EBC" },
+        "maximum": { "value": "number", "unit": "EBC" }
+      },
+      "alcohol_by_volume": {
+        "minimum": { "value": "number", "unit": "PERCENT_SIGN" },
+        "maximum": { "value": "number", "unit": "PERCENT_SIGN" }
+      },
+      "international_bitterness_units": {
+        "minimum": { "value": "number", "unit": "IBUS" },
+        "maximum": { "value": "number", "unit": "IBUS" }
+      },
+      "appearance": "string",
+      "notes": "string"
+    },
+    "category": "string",
+    "batch_size": {
+      "value": "number",
+      "unit": "string"
+    },
+    "brew_count": "integer",
+
+    "tags": ["string"],
+    "comments": [
+      {
+        "user": "string",
+        "comment": "string",
+        "timestamp": "2025-01-06T00:00:00Z"
+      }
+    ],
+    "awards": [
+      {
+        "award_name": "string",
+        "year": "integer",
+        "details": "string"
+      }
+    ],
+    "commercial_copy": {
+      "brewery": "string",
+      "beer_name": "string",
+      "votes": [
+        {
+          "vote_by": "string",
+          "stars": "integer"
+        }
+      ]
+    }
+  },
+  "recipe_meta": {
+    "created_at": "2025-01-06T00:00:00Z",
+    "updated_at": "2025-01-06T00:00:00Z",
+    "created_by": "user_id",
+    "updated_by": "user_id",
+    "public": "boolean"
+  },
+  "water_profile": {
+    "goal": "string",
+    "start_water_source": "string",
+    "start_water_profile": {
+      "calcium": { "value": "number", "unit": "MGL" },
+      "magnesium": { "value": "number", "unit": "MGL" },
+      "sulfate": { "value": "number", "unit": "MGL" },
+      "chloride": { "value": "number", "unit": "MGL" },
+      "bicarbonate": { "value": "number", "unit": "MGL" },
+      "sodium": { "value": "number", "unit": "MGL" }
+    },
+    "water_additives": [
+      {
+        "name": "string",
+        "purpose": "string",
+        "amount": {
+          "value": "number",
+          "unit": "grams"
+        }
+      }
+    ]
+  },
+  "recipe": {
+    "water_volumes": {
+      "strike_volume": {
+        "value": "number",
+        "unit": "liters"
+      },
+      "first_runnings_volume": {
+        "value": "number",
+        "unit": "liters"
+      },
+      "sparge_volume": {
+        "value": "number",
+        "unit": "liters"
+      },
+      "preboil_volume": {
+        "value": "number",
+        "unit": "liters"
+      },
+      "postboil_volume": {
+        "value": "number",
+        "unit": "liters"
+      },
+      "fermentation_volume": {
+        "value": "number",
+        "unit": "liters"
+      }
+    },
+    "ingredients": {
+      "fermentables": [
+        {
+          "id": "string",
+          "name": "string",
+          "alias_name": "string",
+          "type": "string",
+          "purpose": "string",
+          "style_guide": "string",
+          "description": "string",
+          "meta": {
+            "price_per_weight": {
+              "value": "number",
+              "unit": "currency/kg"
+            },
+            "supplier": {
+              "name": "string",
+              "contact": "string",
+              "supplier_url": "string"
+            },
+            "origin_country": "string",
+            "organic": false,
+            "certifcation": "string"
+          },
+          "aroma_profile": {
+            "caramel": "integer",
+            "toasty": "integer",
+            "nutty": "integer",
+            "roasty": "integer",
+            "chocolate": "integer",
+            "malty": "integer",
+            "honey": "integer",
+            "smoky": "integer",
+            "fruity": "integer",
+            "grainy": "integer",
+            "herbal": "integer"
+          },
+          "characteristics": "string",
+          "amount": {
+            "value": "number",
+            "unit": "string"
+          },
+          "malt_values": {
+            "diastatic_power": {
+              "value": "number",
+              "unit": "string"
+            },
+            "extract_efficiency": {
+              "value": "number",
+              "unit": "percentage"
+            },
+            "color": {
+              "value": "number",
+              "unit": "EBC"
+            },
+            "humidity": {
+              "value": "number",
+              "unit": "percentage"
+            },
+            "friability": {
+              "value": "number",
+              "unit": "percentage"
+            },
+            "fan": { "value": "number", "unit": "MGL" },
+            "protein": { "value": "number", "unit": "percentage" },
+            "beta_glucan": { "value": "number", "unit": "MGL" }
+          },
+          "substitute": {
+            "id": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "hops": [
+        {
+          "id": "string",
+          "name": "string",
+          "alias_name": "string",
+          "type": "string",
+          "purpose": "string",
+          "style_guide": "string",
+          "description": "string",
+          "meta": {
+            "price_per_weight": {
+              "value": "number",
+              "unit": "currency/kg"
+            },
+            "supplier": {
+              "name": "string",
+              "contact": "string",
+              "supplier_url": "string"
+            },
+            "origin_country": "string",
+            "organic": false,
+            "certifcation": "string"
+          },
+          "use": "string",
+          "addition_form": "string",
+          "remaining_time": {
+            "value": "number",
+            "unit": "minutes"
+          },
+          "aroma_profile": {
+            "citrus": "integer",
+            "tropical": "integer",
+            "stone_fruit": "integer",
+            "berry": "integer",
+            "apple": "integer",
+            "floral": "integer",
+            "grassy": "integer",
+            "herbal": "integer",
+            "spicy": "integer",
+            "resinous": "integer",
+            "pine": "integer",
+            "sweet": "integer"
+          },
+          "characteristics": "string",
+          "amount": {
+            "value": "number",
+            "unit": "string"
+          },
+          "hob_values": {
+            "alpha_acid": {
+              "value": "number",
+              "unit": "percentage"
+            },
+            "beta_acid": {
+              "value": "number",
+              "unit": "percentage"
+            },
+            "cohumulone": {
+              "value": "number",
+              "unit": "percentage"
+            },
+            "total_oil_ml_per_100g": {
+              "value": "number",
+              "unit": "string"
+            },
+            "humulene": {
+              "value": "number",
+              "unit": "percentage"
+            },
+            "myrcene": {
+              "value": "number",
+              "unit": "percentage"
+            }
+          },
+          "substitute": {
+            "id": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "yeasts": [
+        {
+          "id": "string",
+          "name": "string",
+          "alias_name": "string",
+          "type": "string",
+          "purpose": "string",
+          "style_guide": "string",
+          "description": "string",
+          "form": "string",
+          "meta": {
+            "price_per_weight": {
+              "value": "number",
+              "unit": "currency/kg"
+            },
+            "supplier": {
+              "name": "string",
+              "contact": "string",
+              "supplier_url": "string"
+            },
+            "origin_country": "string",
+            "organic": false,
+            "certifcation": "string"
+          },
+          "aroma_profile": {
+            "fruity_esters": "integer",
+            "spicy_phenolic": "integer",
+            "funky_brettanomyces": "integer",
+            "alcoholic": "integer",
+            "bready": "integer",
+            "neutral": "integer"
+          },
+          "characteristics": "string",
+          "amount": {
+            "value": "number",
+            "unit": "string"
+          },
+          "yeast_values": {
+            "attenuation": {
+              "value": "number",
+              "unit": "percentage"
+            },
+            "pitch_rate": {
+              "value": "number",
+              "unit": "million cells per mL per degree Plato"
+            },
+            "temperature_range": {
+              "minimum": { "value": "number", "unit": "string" },
+              "maximum": { "value": "number", "unit": "string" }
+            },
+            "flocculation": "string",
+            "alcohol_tolerance": { "value": "number", "unit": "percentage" }
+          },
+          "substitute": {
+            "id": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "other_additives": [
+        {
+          "id": "string",
+          "name": "string",
+          "type": "string",
+          "purpose": "string",
+          "style_guide": "string",
+          "description": "string",
+          "meta": {
+            "price_per_weight": {
+              "value": "number",
+              "unit": "currency/kg"
+            },
+            "supplier": {
+              "name": "string",
+              "contact": "string",
+              "supplier_url": "string"
+            },
+            "origin_country": "string",
+            "organic": false,
+            "certifcation": "string"
+          },
+          "use": "string",
+          "addition_form": "string",
+          "remaining_time": {
+            "value": "number",
+            "unit": "minutes"
+          },
+          "characteristics": "string",
+          "amount": {
+            "value": "number",
+            "unit": "grams"
+          },
+          "substitute": "string"
+        }
+      ]
+    },
+
+    "process": {
+      "milling": {
+        "grain_weight": {
+          "value": "number",
+          "unit": "kg"
+        },
+        "crush_fineness": "string"
+      },
+      "mash": {
+        "schedule": [
+          {
+            "heat_up_power": "integer",
+            "step": "string",
+            "temperature": {
+              "value": "number",
+              "unit": "Celsius"
+            },
+            "time": {
+              "value": "number",
+              "unit": "minutes"
+            },
+            "ramp_time": {
+              "value": "number",
+              "unit": "minutes"
+            }
+          }
+        ]
+      },
+      "boil": {
+        "heat_up_power": "integer",
+        "rolling_boil_power": "integer",
+        "time": {
+          "value": "number",
+          "unit": "minutes"
+        },
+        "additives": [
+          {
+            "additive": "string",
+            "addition_time": {
+              "value": "number",
+              "unit": "minutes"
+            }
+          }
+        ]
+      },
+      "cooling": {
+        "method": "string",
+        "target_temperature": {
+          "value": "number",
+          "unit": "Celsius"
+        }
+      },
+      "fermentation": {
+        "stages_numbers": "integer",
+        "schedule": [
+          {
+            "stage": "string",
+            "temperature": {
+              "value": "number",
+              "unit": "Celsius"
+            },
+            "pressure": {
+              "value": "number",
+              "unit": "psi"
+            },
+            "time": {
+              "value": "number",
+              "unit": "days"
+            },
+            "additive": {
+              "name": "string",
+              "value": "number",
+              "unit": "string"
+            },
+            "comments": "string"
+          }
+        ],
+        "remarks": "string"
+      },
+      "conditioning": {
+        "temperature": {
+          "value": "number",
+          "unit": "Celsius"
+        },
+        "time": {
+          "value": "number",
+          "unit": "weeks"
+        },
+        "additive": {
+          "name": "string",
+          "value": "number",
+          "unit": "string"
+        }
+      },
+      "carbonation": {
+        "method": "string",
+        "pressure": {
+          "value": "number",
+          "unit": "psi"
+        },
+        "target_volumes": "number"
+      }
+    },
+    "extensions": {
+      "customField1": "value"
+    }    
+  },
+  "brew_log": {
+    "log_file": {
+      "brew_timestamps": {
+        "brew_date": "2025-01-06T00:00:00Z",
+        "start_fermentation_date": "2025-01-06T00:00:00Z",
+        "start_conditioning_date": "2025-01-06T00:00:00Z",
+        "kegged_date": "2025-01-06T00:00:00Z",
+        "bottled_date": "2025-01-06T00:00:00Z"
+      }
+    },
+    "results": {
+      "original_gravity": {
+        "value": "number",
+        "unit": "string"
+      },
+      "final_gravity": {
+        "value": "number",
+        "unit": "string"
+      },
+      "color": {
+        "value": "number",
+        "unit": "string"
+      },
+      "alcohol_by_volume": "number"
+    },
+    "water_profile": {
+      "goal": "string",
+      "start_water_source": "string",
+      "start_water_profile": {
+        "calcium": { "value": "number", "unit": "MGL" },
+        "magnesium": { "value": "number", "unit": "MGL" },
+        "sulfate": { "value": "number", "unit": "MGL" },
+        "chloride": { "value": "number", "unit": "MGL" },
+        "bicarbonate": { "value": "number", "unit": "MGL" },
+        "sodium": { "value": "number", "unit": "MGL" }
+      },
+      "water_additives": [
+        {
+          "name": "string",
+          "purpose": "string",
+          "amount": {
+            "value": "number",
+            "unit": "grams"
+          }
+        }
+      ]
+    },
+    "mash_schedule": [
+      {
+        "step_name": "string",
+        "ramp_up": {
+          "start_temp": "number",
+          "start_time": "2025-01-06T00:00:00Z",
+          "ramp_power": {
+            "value": "number",
+            "unit": "string"
+          }
+        },
+        "start_time": "2025-01-06T00:00:00Z",
+        "duration": "string",
+        "temperature": "string",
+        "power_setting": "string",
+        "fermentable": "string",
+        "weight_added": {
+          "value": "number",
+          "unit": "string"
+        }
+      }
+    ],
+    "hob_additions": [
+      {
+        "name": "string",
+        "type": "string",
+        "boil_time_left": {
+          "value": "number",
+          "unit": "string"
+        },
+        "weight_added": {
+          "value": "number",
+          "unit": "string"
+        }
+      }
+    ],
+    "dry_hob": [
+      {
+        "name": "string",
+        "type": "string",
+        "time_added_after_fermentation_started": {
+          "value": "number",
+          "unit": "string"
+        },
+        "weight_added": {
+          "value": "number",
+          "unit": "string"
+        },
+        "notes": "string"
+      }
+    ],
+    "yeast": [
+      {
+        "name": "string",
+        "type": "string",
+        "form": "string",
+        "pitching_temperature": {
+          "value": "number",
+          "unit": "string"
+        },
+        "weight_added": {
+          "value": "number",
+          "unit": "string"
+        },
+        "notes": "string"
+      }
+    ],
+    "fermentation": {
+      "pitch_stages": [
+        {
+          "name": "string",
+          "temperature": {
+            "value": "number",
+            "unit": "Celsius"
+          },
+
+          "pressure": {
+            "value": "number",
+            "unit": "psi"
+          },
+          "time": {
+            "value": "number",
+            "unit": "days"
+          },
+          "additive": {
+            "name": "string",
+            "value": "number",
+            "unit": "string"
+          },
+          "comments": "string"
+        }
+      ]
+    },
+    "conditioning": {
+      "temperature": {
+        "value": "number",
+        "unit": "Celsius"
+      },
+      "time": {
+        "value": "number",
+        "unit": "weeks"
+      },
+      "additive": {
+        "name": "string",
+        "value": "number",
+        "unit": "string"
+      }
+    },
+    "carbonation": {
+      "method": "string",
+      "pressure": {
+        "value": "number",
+        "unit": "psi"
+      },
+      "target_volumes": "number"
+    },
+    "serving": [
+      {
+        "type": "string",
+        "serving_size": {
+          "volume": "number",
+          "unit": "string"
+        },
+        "additives": "string",
+        "prime_amounts": {
+          "volume": "number",
+          "unit": "string"
+        }
+      }
+    ],
+    "other_timeline": [
+      {
+        "timestamp": "2025-01-06T00:00:00Z",
+        "activity": "string",
+        "details": "string"
+      }
+    ],
+    "tasting_reports": [{ "id": "string" }]
+  }
+}

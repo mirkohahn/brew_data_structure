@@ -1,0 +1,212 @@
+{
+    "recipe_template_version": "0.4.1",
+    "date_created": "2025-01-06T00:00:00Z",
+    "date_modified": "2025-01-06T00:00:00Z",
+    "template_creator": {
+        "name": "mirko hahn",
+        "github": "@mirkohahn",
+        "website": "connected-brewery.com",
+        "contact": "contact@connected-brewery.com",
+        "other": "string"
+      },
+    "template_contributors": [
+      {
+        "name": "John Doe",
+        "github": "johnbrew",
+        "website": "https://johnbrewery.com",
+        "contact": "john@brewery.com",
+        "other": "N/A"
+      }
+    ],
+    "description": "A detailed JSON template for a classic German Pilsner recipe featuring a step mash process and dry hopping. This is a data sample, NOT an actual recipe!",
+    "conversion": {
+      "from_legacy": "Supported",
+      "to_legacy": "Partial - Potential Data Loss"
+    },
+    "converted_from": {
+      "original_file_name": "pilsner_recipe.xml",
+      "original_file_format": "XML",
+      "converted_at": "2025-01-06T00:00:00Z",
+      "converted_via": "XML-to-JSON Converter v1.0 | hasabrewery.com"
+    },
+    "recipe_data": {
+      "id": "128bit4a-id24-4e57-af1b-sample9b6b5",
+      "name": [
+        {
+          "lang_id": "en",
+          "name": "Classic German Pilsner"
+        ,}
+        {
+          "lang_id": "de",
+          "name": "Klassisches Deutsches Pils"
+        }
+      ],
+      "title_image": "https://hasabrewery.com/static/media/landing-image.232365eb9f2b03fa1c6b.png",
+      "version": 1,
+      "type": "Lager",
+      "style": {
+        "name": "German Pilsner",
+        "aroma": "Crisp with floral hop notes.",
+        "flavor": "Clean malt base with a pronounced bitterness.",
+        "mouthfeel": "Light-bodied, well-carbonated.",
+        "original_gravity": {
+          "minimum": { "value": 1.048, "unit": "SG" },
+          "maximum": { "value": 1.050, "unit": "SG" }
+        },
+        "final_gravity": {
+          "minimum": { "value": 1.010, "unit": "SG" },
+          "maximum": { "value": 1.012, "unit": "SG" }
+        },
+        "color": {
+          "minimum": { "value": 8, "unit": "EBC" },
+          "maximum": { "value": 12, "unit": "EBC" }
+        },
+        "alcohol_by_volume": {
+          "minimum": { "value": 4.8, "unit": "PERCENT_SIGN" },
+          "maximum": { "value": 5.2, "unit": "PERCENT_SIGN" }
+        },
+        "international_bitterness_units": {
+          "minimum": { "value": 25, "unit": "IBUS" },
+          "maximum": { "value": 35, "unit": "IBUS" }
+        },
+        "appearance": "Golden, clear with a white frothy head.",
+        "notes": "Best served chilled at 4-7°C."
+      },
+      "category": "Beer",
+      "batch_size": {
+        "value": 25,
+        "unit": "liters"
+      },
+      "brew_count": 1,
+      "tags": ["Pilsner", "German", "Step Mash"],
+      "comments": [
+        {
+          "user": "HasABrewery_User007",
+          "comment": "Great recipe for beginners and experts alike.",
+          "timestamp": "2025-01-06T10:00:00Z"
+        }
+      ],
+      "awards": [
+        {
+          "award_name": "Best Pilsner 2025",
+          "year": 2025,
+          "details": "Awarded at the International Brew Fest."
+        }
+      ]
+    },
+    "recipe_meta": {
+        "created_at": "2025-01-04T00:00:00Z",
+        "updated_at": "2025-01-05T00:00:00Z",
+        "created_by": "362e52cc-ab5d-43a2-aa9c-ebee2618cf57",
+        "updated_by": "b144cf72-e2fa-43c2-b8fb-6af2dbe09334",
+        "public": "true"
+      },
+    "water_profile": {
+      "goal": "Soft water similar to Pilsen's profile.",
+      "start_water_source": "Tap Water",
+      "start_water_profile": {
+        "calcium": { "value": 50, "unit": "MGL" },
+        "magnesium": { "value": 10, "unit": "MGL" },
+        "sulfate": { "value": 50, "unit": "MGL" },
+        "chloride": { "value": 15, "unit": "MGL" },
+        "bicarbonate": { "value": 20, "unit": "MGL" },
+        "sodium": { "value": 5, "unit": "MGL" }
+      },
+      "water_additives": [
+        {
+          "name": "Calcium Chloride",
+          "purpose": "Balance sulfate-to-chloride ratio",
+          "amount": { "value": 1.5, "unit": "grams" }
+        }
+      ]
+    },
+    "recipe": {
+      "water_volumes": {
+        "strike_volume": { "value": 20, "unit": "liters" },
+        "sparge_volume": { "value": 16, "unit": "liters" },
+        "preboil_volume": { "value": 31, "unit": "liters" },
+        "postboil_volume": { "value": 27, "unit": "liters" },
+        "fermentation_volume": { "value": 25, "unit": "liters" }
+      },
+      "ingredients": {
+        "fermentables": [
+          {
+            "id": "2e87ad92-e560-4190-ad3a-45db05b03152",
+            "name": "Pilsner Malt",
+            "type": "Grain",
+            "amount": { "value": 5.15, "unit": "kg" }
+          }
+        ],
+        "hops": [
+          {
+            "id": "02bfcbfd-9b49-425b-a4b1-eb0699e564c5",
+            "name": "Hallertauer Mittelfrüh",
+            "type": "Pellet",
+            "use": "Boil",
+            "amount": { "value": 50, "unit": "grams" },
+            "remaining_time": { "value": 60, "unit": "minutes" }
+          }
+        ],
+        "yeasts": [
+          {
+            "id": "92602a30-4ab6-4062-ac24-48a3ce0e9a4c",
+            "name": "WLP800 - Pilsner Lager Yeast",
+            "form": "dry",
+            "amount": { "value": 11.5, "unit": "grams" }
+          }
+        ]
+      },
+      "process": {
+        "mash": {
+          "schedule": [
+            {
+              "step": "Protein Rest",
+              "temperature": { "value": 52, "unit": "Celsius" },
+              "time": { "value": 15, "unit": "minutes" }
+            },
+            {
+              "step": "Saccharification Rest",
+              "temperature": { "value": 65, "unit": "Celsius" },
+              "time": { "value": 60, "unit": "minutes" }
+            },
+            {
+              "step": "Mash Out",
+              "temperature": { "value": 78, "unit": "Celsius" },
+              "time": { "value": 10, "unit": "minutes" }
+            }
+          ]
+        },
+        "boil": {
+          "time": { "value": 60, "unit": "minutes" }
+        },
+        "cooling": {
+          "method": "Immersion Chiller",
+          "target_temperature": { "value": 10, "unit": "Celsius" }
+        },
+        "fermentation": {
+          "schedule": [
+            {
+              "stage": "Primary",
+              "temperature": { "value": 10, "unit": "Celsius" },
+              "time": { "value": 14, "unit": "days" }
+            },
+            {
+              "stage": "Secondary",
+              "temperature": { "value": 2, "unit": "Celsius" },
+              "time": { "value": 14, "unit": "days" }
+            }
+          ]
+        },
+        "conditioning": {
+          "temperature": { "value": 0, "unit": "Celsius" },
+          "time": { "value": 4, "unit": "weeks" }
+        },
+        "carbonation": {
+          "method": "Forced",
+          "pressure": { "value": 2.4, "unit": "psi" },
+          "target_volumes": 2.5
+        }
+      }
+    }
+  }
+  
