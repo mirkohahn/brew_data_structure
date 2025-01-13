@@ -29,12 +29,14 @@
   },
   "recipe_data": {
     "id": "string",
+    "version": "integer",
+    "deleted": false,
+    "file_copied_from": "string",
     "name": [{
     "lang_id": "string",
     "name": "string"
     }],
     "title_image": "string",
-    "version": "integer",
     "type": "string",
     "style": {
       "name": "string",
